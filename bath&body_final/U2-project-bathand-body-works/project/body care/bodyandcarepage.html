@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="logo.png" type="image/x-icon">
+     
+    <title>Skin Care Products | Bath & Body Works</title>
+    <style>
+/* ***TOP BAR CSS*** */
+
+#topbar
+{  
+    width: 100%;
+    height: 30px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color:rgb(211, 202, 202);
+    float: right;
+}
+#innervbar
+{
+   display:flex; 
+   
+}
+#innervbar>i 
+{
+    padding-left:250px;
+    padding-right: 20px;
+    padding-top: 6px;
+}
+
+#innervbar p {
+    margin-top:-0.5px;
+    padding-top: 6px;
+}
+#innervbar>a
+{
+    text-decoration: underline;
+    padding-top: 4px;
+    
+}
+#innervbar>a:hover
+{
+    text-decoration:none;
+}
+.fa-location-dot
+{   
+    color:mediumvioletred;
+}
+
+@media only screen and (min-width: 50px) and (max-width:1435px)
+{
+   #topbar {
+
+    background-color:white;
+    float: left;
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:35px;
+    
+    
+   }
+    #innervbar
+   {
+      margin: 0;
+      padding: 0;
+   
+   }
+   #innervbar i
+   {
+     padding: 0;
+     padding-left: 10px;
+     padding-right: 8px;
+     padding-top:4px;
+   }
+   #innervbar p
+   {
+      margin-left: 5px;
+      margin-top:0px;
+      margin-right: 8px;;
+      
+   }
+   #innervbar>a
+  {
+    
+    margin-left: 0%;
+    
+  }
+}
+
+
+/* *****naV BAR CSS******* */
+
+#navbar
+{   
+    width: 100%;
+    height:100px;
+    background-color:#ffffff;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 40px;
+    
+    
+}
+#navbar div>a>h1 {
+
+    font-size: 50px;
+    font-weight: 300;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#05599b;
+
+}
+#srch {
+    color:#05599b;
+    height: 15px;
+    width: 15px;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding-top: 7.4px;
+    padding-right: 2px;
+    padding-bottom: 13.7px;
+}
+#search
+{   
+   
+   border: none;
+   border-top: 1px solid;
+    border-bottom: 1px solid; 
+    border-left: 1px solid;
+    padding-top: 9px;
+    padding-bottom:11px;
+    font-weight: 200;
+    margin-left: 9px;
+    padding-left: 10px;
+    padding-right: 100px;
+}
+#centerdiv
+{
+  margin-top:-50px;
+}
+
+
+
+#Big
+{
+    display:flex;
+    float:right;
+    
+}
+
+#Big img
+{
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
+    padding-top:-5px;
+    cursor: pointer;
+}
+#con
+{
+    padding-top: 18px;
+    padding-right: 35px;
+    cursor: pointer;
+}
+.fa-cart-arrow-down
+{
+    color:teal;
+}
+
+@media only screen and (min-width: 50px) and (max-width:1435px){
+
+    #navbar
+    {
+        margin-top:-50px;
+        padding-bottom: 56px;
+        width: 100%;
+        height: auto;
+        display:grid;
+       grid-template-columns: repeat(1,1fr);
+       grid-template-rows: auto;
+    }
+    #navbar div>a>h1 {
+
+        font-size: 35px;
+        font-weight: 500;
+        padding-bottom: 15px;
+        margin-top: -20px;
+        border-bottom: 3px solid #dde2e6;
+    }
+    #srch {
+        height: 15px;
+        width: 15px;
+        border: none;
+       float: left;
+       font-size:23px;
+       padding:0;
+       margin-top: -103px;
+       margin-left: 40px;
+    }
+    #search
+    {   
+       
+       border: none;
+       text-decoration: none;
+        font-size: 0;
+    }
+    #Big
+    {
+        margin-top:-120px;
+    }
+    
+    #Big img
+    {
+        width: 40px;
+        height: 40px;
+       
+    }
+        #con
+    {
+       font-size: 12px;
+       margin-top:-8px;
+       padding-right: -5px;
+    }
+
+}
+
+
+
+
+
+
+     #mainpage{
+        color: #666;
+         font-family: Trade Gothic W01 Light,Arial,sans-serif;
+         font-size: 12px;
+        padding:8px 20px 27px; 
+        }
+        #mainpage>hr{
+            height:3px;
+            background-color:#e7e3e3;
+            border:none;
+        }
+    #mainpage>p>a{
+        color: #666;
+    }
+    #mainpage>p>a:hover{
+        text-decoration:none;
+    }
+    #maindiv1{
+        display:flex;
+        justify-content: space-between;
+      margin:auto;
+      
+    }
+    
+    #div-2{
+        width:78%
+    }
+    #div-1{
+        width:145px;
+      margin-left:51px;
+    }
+   
+    #div-2>h1{
+       color:#666;
+       /* margin:0px 0px 37.5px; */
+       margin-bottom:-15px;
+       padding:0px 0px 15px;
+       font-size: 24px;
+           font-family: Trade Gothic W01 Light,Arial,sans-serif;
+           font-weight: 400;
+           line-height: 1.3125rem;
+    }
+  #div-2>#hr1{
+       background-color:#242323;
+       border:none;
+       height: 0.9px;
+    }
+    
+    img{
+        margin-top:35px;
+    }
+    #divforline{
+        margin-top:30px;
+      display:flex;
+      justify-content:space-between;
+    }
+    #divforline>div{
+        width:34%;
+        text-align:center;
+    }
+    #divforline>div>hr{
+        margin-top:27px;
+        background-color:#161515;
+       border:none;
+       height: 0.9px;
+    }
+    #divforline>div>h2{
+        font-family: Trade Gothic W01 Light,Arial,sans-serif;
+        font-size:18.5px; 
+        color:#333
+    }
+
+    #maindiv1>#div-1>a{
+       text-decoration:none;
+       color:#767676;
+       font-size:13px; 
+       font-family: Trade Gothic W01 Light,Arial,sans-serif;
+       font-weight:1;
+       
+    }
+   
+    #maindiv1>#div-1>a:hover{
+        color:rgb(13, 160, 197);
+    }
+    #div-1>.topheadings{
+        margin-top:12px;
+        font-family: Trade Gothic W01 Light,Arial,sans-serif;
+        font-weight:bold ;
+        color:#333333;
+        font-size:12px
+    }
+    
+    #Extradiv{
+        display:flex;
+        width:100%;
+       margin:auto;
+       gap:25px;
+        
+    }
+    #Extradiv>div{
+        
+        width:20%
+    }
+    #div-2>#Extradiv>.abc>img{
+      width:100%;
+      cursor:pointer;
+    }
+    #div-2>#Extradiv>.abc>button{
+        background-color:#FFFFFF;
+        color:#333333;
+        border: 1%;
+        padding:8px 46px;
+        margin-left:25px;
+        margin-top:18px;
+        font-family: Trade Gothic W01 Light,Arial,sans-serif;
+        cursor:pointer;
+    }
+    #div-2>#Extradiv>.abc>button:hover{
+        color:#FFFFFF;
+        background-color:#333333
+    }
+    #div-2>.lastimg{
+        cursor:pointer;
+    }
+    #breakborder{
+        border:1px dashed #333333;
+        cursor:pointer;
+    }
+    #paradiv{
+        width:74%;
+    }
+    #paradiv>h2{
+        font-family: Trade Gothic W01 Light,Arial,sans-serif;
+        margin-top:35px;
+        color:#333333 
+      
+    }
+    #paradiv>p{
+        font-family: Trade Gothic W01 Light,Arial,sans-serif;
+        color:#666666;
+        margin-top: 16px;
+        font-weight:1;
+        line-height: 1.75; 
+    }
+    #paradiv>p>a{
+        text-decoration:underline;
+        color: #333333;
+    }
+    #paradiv>p>a:hover{
+        text-decoration:none;
+    }
+    
+    </style>
+   
+</head>
+<body>
+
+    <div id="topbar">
+        <div></div>
+        <div></div>
+        <div id="innervbar">
+             <i class=" fa-solid fa-location-dot"></i>
+                  <p>PICK UP IN STORE</p>
+                  <a href="">Set store</a>
+        </div>
+
+</div>
+<br><br><br><br>
+<!-- /*******nav bar */******* -->
+
+<div id="navbar">
+    
+  <div></div>
+  <div id="centerdiv">   <a><h1>Bath & Body Works</h1></a>     </div>
+
+  <div>
+        <input type="text" placeholder="search by fregrance and product" id="search"><i id="srch"class="fa-solid fa-magnifying-glass"></i>
+        
+        <div id="Big">
+
+             <div><img id="siign" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw1b727bc5/images/svg-icons/UI-MyAccount.svg?yocs=p_s_" alt=""></div>
+             <div id="con"><i class="fa-2x fa-solid fa-cart-arrow-down"></i></div>
+      </div>
+        
+ </div>
+
+
+
+</div>
+   
+    <div id="mainpage">
+
+
+        <!-- enter home page href -->
+        <hr>
+        <p><a href="http://127.0.0.1:5500/U2-project-bathand-body-works/index.html">HOME</a>/ BODY CARE</p>
+    </div>
+
+    <div id="maindiv1">
+
+        <div id="div-1">
+            <p class="topheadings">TOP OFFERS</p>
+            <br>
+           
+            <a href="topoffers1.html"> Buy 3, Get 1 Free Select Body Care</a>
+            <br>
+            <br>
+            
+             
+            <a href="topoffers2.html"> Buy 2, Get 1 Free Travel, Hand & Lip Care</a>
+            <br>
+             <br>
+             <br>
+              
+            <p class="topheadings">FEATURED</p>
+            <br>
+          
+            <a href="featured1.html"> New Body Care</a>
+            <br>
+            <br>
+              
+            <a href="featured2.html">Costomer Favorites</a>
+            <br>
+            <br>
+            
+            <a href="featured3.html">Retired Fragrances</a>
+            <br>
+            <br>
+             
+            <a href="featured4.html">Travel Size</a>
+            <br>
+            <br>
+            <br> 
+
+            <p class="topheadings">BATH & SHOWER</p>
+            <br>
+         
+            <a href="bathshower1.html">All Bath & Shower</a>
+            <br>
+            <br>
+             
+            <a href="bathshower2.html"> Body Wash & Shower Gel</a>
+            <br>
+            <br>
+            
+            <a href="bathshower3.html">Bubble Bath</a>
+            <br>
+            <br>
+              
+            <a href="bathshower4.html">Bar Soap</a>
+            <br>
+            <br>
+              
+            <a href="bathshower5.html">Bath Accessories</a>
+            <br>
+            <br>
+            <br> 
+
+            <p class="topheadings">MOISTURIZERS</p>
+            <br>
+            
+            <a href="moisturizers1.html">All Bath & Shower</a>
+            <br>
+            <br>
+             
+            <a href="moisturizers2.html"> Body Wash & Shower Gel</a>
+            <br>
+            <br>
+            
+            <a href="moisturizers3.html">Bubble Bath</a>
+            <br>
+            <br>
+            
+            <a href="moisturizers4.html">Bar Soap</a>
+            <br>
+            <br>
+           
+            <a href="moisturizers5.html">Bath Accessories</a>
+            <br>
+            <br>
+            <br>
+
+            <p class="topheadings">FRAGRANCE</p>
+            <br>
+            <a href="fragrance1.html">All Fragrance</a>
+            <br>
+            <br>
+           
+            <a href="Fragrance2.html"> Body Sprays & Mists</a>
+            <br>
+            <br>
+             
+            <a href="Fragrance3.html">Perfume & Cologne</a>
+            <br>
+            <br>
+            <br> 
+
+            <p class="topheadings">AROMATHERAPY</p>
+            <br>
+            <br>
+            <a href="aromatherapy1.html">All Aromatherapy</a>
+            <br>
+            <br>
+             
+            <a href="aromatherapy2.html"> Body Wash & Shower Gel</a>
+            <br>
+            <br>
+              
+            <a href="aromatherapy3.html">Moisturizers</a>
+            <br>
+            <br>
+              
+            <a href="aromatherapy4.html">Mists & Sprays</a>
+            <br>
+            <br>
+            <br> 
+
+            <p class="topheadings">MEN'S</p>
+            <br>
+            <br>
+            <a href="mens1.html">All Men's</a>
+            <br>
+            <br>
+              
+            <a href="mens2.html"> Body Wash & Shower Gel</a>
+            <br>
+            <br>
+              
+            <a href="mens3.html">Moisturizers</a>
+            <br>
+            <br>
+             
+            <a href="mens4.html">Body Spray & Cologne</a>
+            <br>
+            <br>
+            <br> 
+
+            <p class="topheadings">GIFT SETS</p>
+            <br>
+            
+            <a href="giftsets1.html">Body Care Gift Sets</a>
+            <br>
+            <br>
+            <br>
+              
+        </div>
+
+        <div id="div-2">
+            <h1>Body Care</h1>
+            <hr id="hr1">
+            <img id="img-1" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw6d3996e1/images/Spring2022/bc_header_0_sp1_lb.jpg?yocs=p_s_" 
+            alt="">
+            <div id="divforline">
+                  <div><hr class="centerline"></div>
+                  <div id="mid-div">
+                       <h2>SHOP BY CATEGORY</h2>
+                  </div>
+                  <div><hr class="centerline"></div>
+            </div>
+
+            <div id="Extradiv">
+                <div class="abc" id="p">
+                    <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw82d86dbb/images/Spring2022/bc_ffm_0_sp1_vn.jpg?yocs=p_s_"
+                     alt="">
+                     <button>FRAGRANCES</button>
+                </div>
+                <div class="abc" id="q">
+                    <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwa2966009/images/Spring2022/bc_bcviznav_0_sp1_vn.jpg?yocs=p_s_"
+                     alt="">
+                     <button>MOISTURIZERS</button>
+                </div>
+                <div class="abc" id="r">
+                    <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwb3834b8f/images/Spring2022/obc_mens_sp2_vn.jpg?yocs=p_s_"
+                     alt="">
+                     <button>BATH & SHOWER</button>
+                </div>
+                <div class="abc"id="s" >
+                    <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw556bcddf/images/Spring2022/obc_atviznav_0_sp1_vn.jpg?yocs=p_s_" alt="">
+                      <button>AROMATHERAPY</button>
+                </div>
+
+
+            </div>
+
+            <img class="lastimg" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwa445b144/images/Spring2022/fbc_tropicals-v2_sp2_lb.jpg?yocs=p_s_" alt="">
+        
+          <img class="lastimg"src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwa8cd1e92/images/Spring2022/obc_mens_0_sp1_lb.jpg?yocs=p_s_" alt="">
+       
+         <div id="breakborder">
+          <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw400d7d63/images/Spring2022/obc_atrestage_0_sp1_lb.jpg?yocs=p_s_" alt="">
+        </div>
+      <div  id="paradiv">
+       <h2>About Body Care from Bath & Body Works</h2>
+       <p>Lotions, scrubs, creams, mists, oils…we get it, body care can be overwhelming. That’s why we created a step-by-step skincare guide (and some fabulous products) to get you started:</p>
+        <p>"It all starts with exfoliation. Our"
+        <a href="topoffers1.html">body scrubs</a>
+    " buff away dead skins (and bad moods), leaving you soft, smooth and primed for the rest of your body care routine."
+    </p>
+        <p>"Next, get into the cleansing mood with a dreamily scented"
+            <a href="topoffers1.html">body wash or shower gel.</a>
+        "From floral to fresh, citrusy to warm, you’ll find the perfect wake-up call…even if the alarm did go off a little too early."
+        </p>
+        <p>"Now, add some moisture to your skin with either body cream or body lotion. What’s the difference? Our"
+     <a href="topoffers2.html">body lotions</a>
+        "are packed with super-fluffy shea butter and hydrating vitamin E to keep you incredibly soft, smooth and nourished. Our body cream is also super-hydrating, but with a lush mix of glow-giving coconut oil, moisturizing shea butter and super-rich cocoa butter. Bonus: they leave you feeling smooth and refreshed, "               
+        <i>without</i>
+        "feeling oily or heavy."
+    </p>
+    <p>"And the best for last: it’s time to indulge! Add a lip gloss or balm to your routine to keep your lips soft. Finish off the process with a spritz of your favorite"
+    <a href="topoffers1.html"> fine fragrance mist</a>
+    "to complement your mood."
+    </p>
+    <p>"What if you want to spend a Saturday afternoon relaxing in the tub? Perfect! Light your favorite Bath & Body Works "
+       <a href="featured1.html">3-wick candle</a>
+       ", grab a matching (or completely different!)"
+       <a href="topoffers1.html"> bubble bath or bath fizzie</a>
+           " (think: bath bomb) and soak up some suds and good vibes."
+    </p>
+      <p>"Explore more body care and "
+          <a href="topoffers1.html">skincare routine </a>
+          "products made for specifics: like Aromatherapy, foot care or hand care. Don’t forget that your hair and face need TLC, too!"
+      </p>
+
+
+      </div>
+    </div>
+
+</div>
+    
+
+
+    
+</body>
+</html>
+<script>
+
+    document.querySelector("#div-2>.lastimg").addEventListener("click",myroot)
+  function myroot(){
+      window.location.href="mens1.html"
+  }
+  document.querySelector("#div-2>#breakborder").addEventListener("click",myroot1)
+  function myroot1(){
+      window.location.href="featured1.html"
+  }
+  document.querySelector("#div-2>#Extradiv>#p>button").addEventListener("click",myroot2)
+  function myroot2(){
+      window.location.href="Fragrance2.html"
+  }
+
+  document.querySelector("#div-2>#Extradiv>#s>button").addEventListener("click",myroot3)
+  function myroot3(){
+      window.location.href="moisturizers2.html"
+  }
+  document.querySelector("#div-2>#Extradiv>#q>button").addEventListener("click",myroot4)
+  function myroot4(){
+      window.location.href="bathshower3.html"
+  }
+  document.querySelector("#div-2>#Extradiv>#r>button").addEventListener("click",myroot5)
+  function myroot5(){
+      window.location.href="aromatherapy4.html"
+  }
+ 
+  document.querySelector("#div-2>#Extradiv>#p>img").addEventListener("click",myroot9)
+  function myroot9(){
+      window.location.href="Fragrance2.html"
+  }
+
+  document.querySelector("#div-2>#Extradiv>#s>img").addEventListener("click",myroot10)
+  function myroot10(){
+      window.location.href="moisturizers2.html"
+  }
+  document.querySelector("#div-2>#Extradiv>#q>img").addEventListener("click",myroota)
+  function myroota(){
+      window.location.href="bathshower3.html"
+  }
+  document.querySelector("#div-2>#Extradiv>#r>img").addEventListener("click",myrootb)
+  function myrootb(){
+      window.location.href="aromatherapy4.html"
+  }
+ 
+</script>
